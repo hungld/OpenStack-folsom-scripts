@@ -1,0 +1,5 @@
+#Paste the following:
+export OS_TENANT_NAME=admin
+export OS_USERNAME=admin
+export OS_PASSWORD=admin_password
+export OS_AUTH_URL="http://$(netstat -an | grep 5000 | awk '/ 0 / { print $4 }' | sed s/0.0.0.0/localhost/)/v2.0/"
